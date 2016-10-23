@@ -16,43 +16,43 @@ It allows you to explore the Lua environment within [FAR Manager][].
 In FAR Manager, press the hotkey that you assigned to the macro. A dialog should appear similar to the following:
                                                                            
     +----------------------------- _G  (82) ------------------------------+
-    |&x2261; APanel                        |table    |table: 0x28032200         |
-    |&x2261; Area                          |table    |table: 0x280321b0         |
-    |&x2261; BM                            |table    |table: 0x280319e8         |
-    |&x2261; CmdLine                       |table    |table: 0x28032450         |
-    |&x2261; Dlg                           |table    |table: 0x28030998         |
-    |&x2261; Drv                           |table    |table: 0x27fc1ab0         |
-    |&x2261; Editor                        |table    |table: 0x28030c10         |
-    |&x2261; Far                           |table    |table: 0x28031520         |
-    |&x2261; Help                          |table    |table: 0x27fc1bc8         |
-    |&x2261; Menu                          |table    |table: 0x280311d0         |
-    |&x2261; Mouse                         |table    |table: 0x27fc1ce0         |
-    |&x2261; Object                        |table    |table: 0x2802b558         |
-    |&x2261; PPanel                        |table    |table: 0x28032328         |
-    |&x2261; Panel                         |table    |table: 0x28031fe0         |
-    |&x2261; Plugin                        |table    |table: 0x28031dd0         |
-    |&x2261; Viewer                        |table    |table: 0x27fc1df8         |
-    |&x2261; _G                            |table    |table: 0x27fc1960         |
-    |&x2261; bit                           |table    |table: 0x27fcabd8         |
-    |&x2261; bit64                         |table    |table: 0x27fc72d0         |
-    |&x2261; coroutine                     |table    |table: 0x27fc3708         |
-    |&x2261; debug                         |table    |table: 0x27fc6b00         |
-    |&x2261; editor                        |table    |table: 0x27fed330         |
-    |&x2261; export                        |table    |table: 0x27fce120         |
-    |&x2261; far                           |table    |table: 0x27fd2360         |
-    |&x2261; io                            |table    |table: 0x27fc4d20         |
-    |&x2261; jit                           |table    |table: 0x27fcd768         |
-    |&x2261; lpeg                          |table    |table: 0x2808c9f0         |
-    |&x2261; math                          |table    |table: 0x27fc5f20         |
-    |&x2261; mf                            |table    |table: 0x2802e4f0         |
-    |&x2261; os                            |table    |table: 0x27fc5390         |
-    |&x2261; package                       |table    |table: 0x27fc3aa0         |
-    |&x2261; panel                         |table    |table: 0x27ff1dd8         |
+    |&equiv; APanel                        |table    |table: 0x28032200         |
+    |&equiv; Area                          |table    |table: 0x280321b0         |
+    |&equiv; BM                            |table    |table: 0x280319e8         |
+    |&equiv; CmdLine                       |table    |table: 0x28032450         |
+    |&equiv; Dlg                           |table    |table: 0x28030998         |
+    |&equiv; Drv                           |table    |table: 0x27fc1ab0         |
+    |&equiv; Editor                        |table    |table: 0x28030c10         |
+    |&equiv; Far                           |table    |table: 0x28031520         |
+    |&equiv; Help                          |table    |table: 0x27fc1bc8         |
+    |&equiv; Menu                          |table    |table: 0x280311d0         |
+    |&equiv; Mouse                         |table    |table: 0x27fc1ce0         |
+    |&equiv; Object                        |table    |table: 0x2802b558         |
+    |&equiv; PPanel                        |table    |table: 0x28032328         |
+    |&equiv; Panel                         |table    |table: 0x28031fe0         |
+    |&equiv; Plugin                        |table    |table: 0x28031dd0         |
+    |&equiv; Viewer                        |table    |table: 0x27fc1df8         |
+    |&equiv; _G                            |table    |table: 0x27fc1960         |
+    |&equiv; bit                           |table    |table: 0x27fcabd8         |
+    |&equiv; bit64                         |table    |table: 0x27fc72d0         |
+    |&equiv; coroutine                     |table    |table: 0x27fc3708         |
+    |&equiv; debug                         |table    |table: 0x27fc6b00         |
+    |&equiv; editor                        |table    |table: 0x27fed330         |
+    |&equiv; export                        |table    |table: 0x27fce120         |
+    |&equiv; far                           |table    |table: 0x27fd2360         |
+    |&equiv; io                            |table    |table: 0x27fc4d20         |
+    |&equiv; jit                           |table    |table: 0x27fcd768         |
+    |&equiv; lpeg                          |table    |table: 0x2808c9f0         |
+    |&equiv; math                          |table    |table: 0x27fc5f20         |
+    |&equiv; mf                            |table    |table: 0x2802e4f0         |
+    |&equiv; os                            |table    |table: 0x27fc5390         |
+    |&equiv; package                       |table    |table: 0x27fc3aa0         |
+    |&equiv; panel                         |table    |table: 0x27ff1dd8         |
     +---------------------- F1, F3, F4, Del, Ctrl+M ----------------------+
 
 * The top of the dialog shows the current location within the environment and the number of entries in this location surrounded by parentheses.
 * The middle of the dialog shows the entries in the current location within the environment. The lines have three columns:
-  1. A symbol ("&x2261;" for a table, "~" for a function and a space for everything else) followed by the name of the entry.
+  1. A symbol ("&equiv;" for a table, "~" for a function and a space for everything else) followed by the name of the entry.
   2. The Lua data type for the entry.
   3. Either the contents of the entry or, if it is a table or userdata, the type followed by its address in hexadecimal format.
 * The bottom of the dialog shows some of the keys available in the dialog. The full list of keys are as follows:
