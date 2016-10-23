@@ -14,7 +14,8 @@ It allows you to explore the Lua environment within [FAR Manager][].
 ### From a FAR Manager macro
 
 In FAR Manager, press the hotkey that you assigned to the macro. A dialog should appear similar to the following:
-                                                                           
+
+<pre>
     +----------------------------- _G  (82) ------------------------------+
     |&equiv; APanel                        |table    |table: 0x28032200         |
     |&equiv; Area                          |table    |table: 0x280321b0         |
@@ -49,6 +50,7 @@ In FAR Manager, press the hotkey that you assigned to the macro. A dialog should
     |&equiv; package                       |table    |table: 0x27fc3aa0         |
     |&equiv; panel                         |table    |table: 0x27ff1dd8         |
     +---------------------- F1, F3, F4, Del, Ctrl+M ----------------------+
+</pre>
 
 * The top of the dialog shows the current location within the environment and the number of entries in this location surrounded by parentheses.
 * The middle of the dialog shows the entries in the current location within the environment. The lines have three columns:
