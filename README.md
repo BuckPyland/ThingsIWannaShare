@@ -1,2 +1,8 @@
-# ThingsIWannaShare
-Various things that I want to share with the world for anyone who might find them useful.
+# Things I wanna share
+
+This is where I'll put things that others might find useful.
+
+## What's in here
+
+### LuaExplorer
+A Lua module for exploring the Lua environment within FAR Manager.
