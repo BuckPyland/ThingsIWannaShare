@@ -17,44 +17,50 @@ In FAR Manager, press the hotkey that you assigned to the macro. A dialog should
 
 <pre>
     +----------------------------- _G  (82) ------------------------------+
-    |&equiv; APanel                        |table    |table: 0x28032200         |
-    |&equiv; Area                          |table    |table: 0x280321b0         |
-    |&equiv; BM                            |table    |table: 0x280319e8         |
-    |&equiv; CmdLine                       |table    |table: 0x28032450         |
-    |&equiv; Dlg                           |table    |table: 0x28030998         |
-    |&equiv; Drv                           |table    |table: 0x27fc1ab0         |
-    |&equiv; Editor                        |table    |table: 0x28030c10         |
-    |&equiv; Far                           |table    |table: 0x28031520         |
-    |&equiv; Help                          |table    |table: 0x27fc1bc8         |
-    |&equiv; Menu                          |table    |table: 0x280311d0         |
-    |&equiv; Mouse                         |table    |table: 0x27fc1ce0         |
-    |&equiv; Object                        |table    |table: 0x2802b558         |
-    |&equiv; PPanel                        |table    |table: 0x28032328         |
-    |&equiv; Panel                         |table    |table: 0x28031fe0         |
-    |&equiv; Plugin                        |table    |table: 0x28031dd0         |
-    |&equiv; Viewer                        |table    |table: 0x27fc1df8         |
-    |&equiv; _G                            |table    |table: 0x27fc1960         |
-    |&equiv; bit                           |table    |table: 0x27fcabd8         |
-    |&equiv; bit64                         |table    |table: 0x27fc72d0         |
-    |&equiv; coroutine                     |table    |table: 0x27fc3708         |
-    |&equiv; debug                         |table    |table: 0x27fc6b00         |
-    |&equiv; editor                        |table    |table: 0x27fed330         |
-    |&equiv; export                        |table    |table: 0x27fce120         |
-    |&equiv; far                           |table    |table: 0x27fd2360         |
-    |&equiv; io                            |table    |table: 0x27fc4d20         |
-    |&equiv; jit                           |table    |table: 0x27fcd768         |
-    |&equiv; lpeg                          |table    |table: 0x2808c9f0         |
-    |&equiv; math                          |table    |table: 0x27fc5f20         |
-    |&equiv; mf                            |table    |table: 0x2802e4f0         |
-    |&equiv; os                            |table    |table: 0x27fc5390         |
-    |&equiv; package                       |table    |table: 0x27fc3aa0         |
-    |&equiv; panel                         |table    |table: 0x27ff1dd8         |
+    |▶ APanel                        |table    |table: 0x28032200         |
+    |▶ Area                          |table    |table: 0x280321b0         |
+    |▶ BM                            |table    |table: 0x280319e8         |
+    |▶ CmdLine                       |table    |table: 0x28032450         |
+    |▶ Dlg                           |table    |table: 0x28030998         |
+    |▶ Drv                           |table    |table: 0x27fc1ab0         |
+    |▶ Editor                        |table    |table: 0x28030c10         |
+    |▶ Far                           |table    |table: 0x28031520         |
+    |▶ Help                          |table    |table: 0x27fc1bc8         |
+    |▶ Menu                          |table    |table: 0x280311d0         |
+    |▶ Mouse                         |table    |table: 0x27fc1ce0         |
+    |▶ Object                        |table    |table: 0x2802b558         |
+    |▶ PPanel                        |table    |table: 0x28032328         |
+    |▶ Panel                         |table    |table: 0x28031fe0         |
+    |▶ Plugin                        |table    |table: 0x28031dd0         |
+    |▶ Viewer                        |table    |table: 0x27fc1df8         |
+    |▶ _G                            |table    |table: 0x27fc1960         |
+    |▶ bit                           |table    |table: 0x27fcabd8         |
+    |▶ bit64                         |table    |table: 0x27fc72d0         |
+    |▶ coroutine                     |table    |table: 0x27fc3708         |
+    |▶ debug                         |table    |table: 0x27fc6b00         |
+    |▶ editor                        |table    |table: 0x27fed330         |
+    |▶ export                        |table    |table: 0x27fce120         |
+    |▶ far                           |table    |table: 0x27fd2360         |
+    |▶ io                            |table    |table: 0x27fc4d20         |
+    |▶ jit                           |table    |table: 0x27fcd768         |
+    |▶ lpeg                          |table    |table: 0x2808c9f0         |
+    |▶ math                          |table    |table: 0x27fc5f20         |
+    |▶ mf                            |table    |table: 0x2802e4f0         |
+    |▶ os                            |table    |table: 0x27fc5390         |
+    |▶ package                       |table    |table: 0x27fc3aa0         |
+    |▶ panel                         |table    |table: 0x27ff1dd8         |
     +---------------------- F1, F3, F4, Del, Ctrl+M ----------------------+
 </pre>
 
 * The top of the dialog shows the current location within the environment and the number of entries in this location surrounded by parentheses.
 * The middle of the dialog shows the entries in the current location within the environment. The lines have three columns:
-  1. A symbol ("&equiv;" for a table, "~" for a function and a space for everything else) followed by the name of the entry.
+  1. A symbol followed by the name of the entry. Symbols used are:
+     * ▶ - table
+     * λ - function
+     * ? - boolean
+     * \# - number
+     * $ - string
+     * ø - nil
   2. The Lua data type for the entry.
   3. Either the contents of the entry or, if it is a table or userdata, the type followed by its address in hexadecimal format.
 * The bottom of the dialog shows some of the keys available in the dialog. The full list of keys are as follows:
@@ -79,25 +85,27 @@ In FAR Manager, press the hotkey that you assigned to the macro. A dialog should
     * Shift+F3 - Show some function info (LuaJIT required)
     * Alt+F4 - Open function definition (if available) in editor
     * Ctrl+Up - Show upvalues (editable)
-    * Ctrl+Down - Show environment (editable)
+    * Ctrl+Down - Show the function's environment, if different from \_G (editable)
+                  Otherise, show \_G, after confirmation
     * Ctrl+Right - Show parameters
   * Copying to Clipboard:
     * Ctrl+Ins - value
     * Ctrl+Shift+Ins - key
 
-### From LuaFAR for Editor
+### From LuaFAR for Editor or UM Adapter
 
-Lua Explorer can also be used from the [LuaFAR for Editor][] plugin.
+Lua Explorer can also be used from either the [LuaFAR for Editor][] or [UM Adapter][] plugin.
 Two files are available as samples describing how to do this:
 
-* LFE_LuaExplorer.lua - an example LuaFAR for Editor script that loads the LuaExplorer module and runs the `explore()` method
-* \_usermenu.lua - an example LuaFAR for Editor menu script for executing the above script
+* LFE_LuaExplorer.lua - an example LuaFAR for Editor/UM Adapter script that loads the LuaExplorer module and runs the `explore()` method
+* \_usermenu.lua - an example LuaFAR for Editor/UM Adapter menu script for executing the above script
 
-There is no difference in how Lua Explorer works.
-The only difference is that LuaFAR for Editor has its own Lua environment, so that is the one you will see.
+Since LuaFAR for Editor has its own Lua environment, that is the one you will see in Lua Explorer.
+UM Adapter runs in the same environment as FAR itself (or more accurately, the LuaMacro plugin).
 
 [Lua]: http://www.lua.org
 [Lua Explorer "Advanced"]: http://forum.farmanager.com/viewtopic.php?f=60&t=7988
 [Lua Explorer]: http://forum.farmanager.com/viewtopic.php?f=15&t=7521
 [FAR Manager]: http://www.farmanager.com
 [LuaFAR for Editor]: https://github.com/shmuz/far_plugins
+[UM Adapter]: http://raidar.github.io/Programs/FarScripts.htm#UM_Adapter
